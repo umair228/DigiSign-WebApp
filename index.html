@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DigiSign - An easy way to sign digitally</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main">
+<div class="top">
+    <div class="block">
+        <p>Text Color Picker</p>
+        <input type="color" class="form-control" id="colorPicker">
+    </div>
+    <div class="block">
+        <p>Background</p>
+        <input type="color" class="form-control" id="canvasColor">
+    </div>
+    <div class="block">
+        <p>Font Size</p>
+        <select id="fontPicker">
+            <option value="5">5px</option>
+            <option value="10">10px</option>
+            <option value="20">20px</option>
+            <option value="30">30px</option>
+            <option value="40">40px</option>
+            <option value="50">50px</option>
+        </select>
+    </div>
+</div>
+
+<canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+<div class="bottom">
+    <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+    <button type="button" class="btn btn-success" id="saveButton">Save & Download</button>
+    <button type="button" class="btn btn-warning" id="retrieveButton">Retrieve Saved Sign</button>
+</div>
+</div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
